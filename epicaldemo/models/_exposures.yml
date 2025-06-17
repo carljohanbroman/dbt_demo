@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+  - name: Power_BI_Sales_Report
+    type: dashboard
+    owner:
+      name: Marty McFly
+      email: marty.mcfly@delorean.com
+    depends_on:
+      - ref('fact_sales_transactions')
+      - ref('dim_items')
+      - ref('dim_stores')
+      - ref('dim_customers')
+      - ref('dim_dates')
+    description: Did someone say exponential growth?
+    url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+    maturity: high

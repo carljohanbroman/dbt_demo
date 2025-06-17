@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_items
+    description: This table contains de-normalized data on Item entity
+
+    columns:
+      - name: item_id
+        description: This is a unique identifier for the event
+        tests:
+          - unique
+          - not_null
+
+      - name: SKU
+        description: Stock Keeping Unit (SKU) - the Item number printed on the label of the Item

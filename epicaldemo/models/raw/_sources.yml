@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: d365_fo
+    database: EPICALDEMO
+    schema: d365_fo
+    tables:
+      - name: category
+      - name: date
+      - name: item
+      - name: manager
+      - name: store
+
+  - name: netsuite
+    database: EPICALDEMO
+    schema: netsuite
+    tables:
+      - name: transactions
+
+  - name: inriver
+    description: "inRiver PIM - Source system containing enriched product information that's distributed accross multiple channels like e-commerce, websites, catalogs"
+    database: EPICALDEMO
+    schema: inriver
+    tables:
+      - name: item_attributes
+      
+  - name: salesforce
+    database: EPICALDEMO
+    schema: salesforce
+    tables:
+      - name: customer

@@ -1,0 +1,14 @@
+epicaldemo:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: XGOYSZJ-XF88916      # e.g. xy12345.us-east-1
+      user: epicaldemo
+      password: epicaldemoSummer2025!         # or use key-pair authentication
+      role: ACCOUNTADMIN                 # e.g. SYSADMIN or ANALYST
+      database: EPICALDEMO         # e.g. DEMO_DB
+      warehouse: COMPUTE_WH       # e.g. COMPUTE_WH
+      schema: broman_analytics             # e.g. PUBLIC or your custom schema
+      threads: 4                     # number of concurrent threads dbt should use
+      client_session_keep_alive: False  # Optional, helps keep sessions alive
